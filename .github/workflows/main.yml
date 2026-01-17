@@ -31,8 +31,11 @@ jobs:
       - name: npm
         run: npm install
 
+      - name: rm
+        run: rm package*.json
+
       - name: ls
-        run: ls -la
+        run: ls -l
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
