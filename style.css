@@ -1,0 +1,25 @@
+:root {
+    --r-main-font-size: 32px;
+}
+
+.reveal blockquote {
+    width: 100%;
+}
+
+blockquote div {
+    text-align: start;
+}
+
+h1,
+h3 {
+    color: dodgerblue !important;
+}
+
+em {
+    color: gold;
+}
+
+cite {
+    color: gray;
+    font-size: 75%;
+}
