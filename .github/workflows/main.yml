@@ -45,7 +45,11 @@ jobs:
       - name: Upload
         uses: actions/upload-artifact@v4
         with:
-          path: ${{ github.workspace }}
+          path: |
+            node_modules/
+            index.html
+            style.css
+            *.png
 
       - name: Deploy to GitHub Pages
         id: deployment
