@@ -31,13 +31,13 @@ jobs:
       - name: npm
         run: npm install
 
+      - name: ls
+        run: ls -la
+
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: |
-            index.html
-            style.css
-            *.png
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment
