@@ -34,11 +34,15 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-artifact@v4
         with:
+          name: github-pages
           path: |
             index.html
             style.css
             *.png
             node_modules
+
+      - name: ls
+        run: ls -la
 
       - name: Deploy to GitHub Pages
         id: deployment
