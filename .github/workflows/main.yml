@@ -41,7 +41,6 @@ jobs:
     permissions:
       id-token: write
       pages: write
-      contents: read
 
     environment:
       name: github-pages
@@ -60,7 +59,7 @@ jobs:
       - name: Upload Pages Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: slides
+          name: github-pages
           path: ./dist
 
       - name: Deploy to GitHub Pages
