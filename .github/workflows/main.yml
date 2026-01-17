@@ -45,6 +45,7 @@ jobs:
       id-token: write
       pages: write
       contents: read
+      actions: read
 
     environment:
       name: github-pages
@@ -68,5 +69,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-        with:
-          name: slides
