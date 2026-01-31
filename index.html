@@ -15,6 +15,12 @@
 	<link rel="stylesheet" href="node_modules/reveal.js/plugin/highlight/monokai.css">
 
 	<link rel="stylesheet" href="style.css">
+
+	<script>
+		function openNotes() {
+			Reveal.getPlugins().notes.open();
+		}
+	</script>
 </head>
 
 <body>
@@ -42,7 +48,7 @@
 					</small>
 				</div>
 				<div>
-					<small>Taste S &mdash; Sprecher Ansicht mit Notizen</small>
+					<small>Taste <button onclick="openNotes()">S</button> &mdash; Sprecher Ansicht mit Notizen</small>
 				</div>
 				<aside data-markdown class="notes">
 					- Sprecher Ansicht
